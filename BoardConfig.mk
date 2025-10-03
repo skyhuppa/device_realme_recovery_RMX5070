@@ -19,8 +19,8 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := kryo300
 
 # 64-bit support
-TARGET_SUPPORTS_64_BIT_APPS := true
-TARGET_SUPPORTS_32_BIT_APPS := true
+# TARGET_SUPPORTS_64_BIT_APPS := true
+# TARGET_SUPPORTS_32_BIT_APPS := true
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -35,6 +35,7 @@ TARGET_BOARD_PLATFORM_GPU := Adreno-810
 # Board
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_NO_RADIOIMAGE := true
+BOARD_SYSTEMSDK_VERSIONS := 34
 
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -83,7 +84,7 @@ BOARD_RAMDISK_OFFSET := 0x02000000
 BOARD_DTB_SIZE := 4488060
 BOARD_DTB_OFFSET := 0x01f00000
 BOARD_VENDOR_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE += "video=vfb:640x400,bpp=34,memsize=3072000 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image bootconfig loop.max_part=7 androidboot.selinux=permissive"
+BOARD_KERNEL_CMDLINE += "video=vfb:640x400,bpp=32,memsize=3072000 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image bootconfig loop.max_part=7 androidboot.selinux=permissive"
 BOARD_BOOTCONFIG += androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 androidboot.load_modules_parallel=false androidboot.hypervisor.protected_vm.supported=true androidboot.vendor.qspa=true androidboot.serialconsole=0 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += bootconfig
 
