@@ -6,7 +6,6 @@
 
 # for building
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-BUILD_BROKEN_DUP_RULES := true
 ALLOW_MISSING_DEPENDENCIES := true
 
 DEVICE_PATH := device/realme/RMX5070
@@ -36,6 +35,10 @@ TARGET_BOARD_PLATFORM_GPU := Adreno-810
 # Board
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_NO_RADIOIMAGE := true
+
+# Workaround for error copying vendor files to recovery ramdisk
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
 
 # Display
 TARGET_SCREEN_DENSITY := 480
