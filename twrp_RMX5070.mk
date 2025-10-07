@@ -13,18 +13,18 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit from device
-$(call inherit-product, device/realme/RMX5070/device.mk)
+$(call inherit-product, device/realme/$(PRODUCT_RELEASE_NAME)/device.mk)
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX5070
+TARGET_OTA_ASSERT_DEVICE := $(PRODUCT_RELEASE_NAME)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/realme/RMX5070/recovery/root,recovery/root)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/realme/$(PRODUCT_RELEASE_NAME)/recovery/root,recovery/root)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
  	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
 
-PRODUCT_DEVICE := RMX5070
-PRODUCT_NAME := twrp_RMX5070
+PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme P3
 PRODUCT_MANUFACTURER := realme
