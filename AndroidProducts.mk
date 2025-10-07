@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PRODUCT_RELEASE_NAME := RMX5070
+
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_RMX5070.mk
 
