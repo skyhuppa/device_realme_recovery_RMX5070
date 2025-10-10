@@ -44,7 +44,7 @@ TARGET_BOARD_PLATFORM_GPU := Adreno-810
 # Board
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_NO_RADIOIMAGE := true
-# BOARD_SYSTEMSDK_VERSIONS := 34
+BOARD_SYSTEMSDK_VERSIONS := 34
 
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
