@@ -23,6 +23,10 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/realme/$(PRODUCT_RE
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
  	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/realme/RMX5070/prebuilt/modules,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
+    $(LOCAL_PATH)/prebuilt/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := realme
