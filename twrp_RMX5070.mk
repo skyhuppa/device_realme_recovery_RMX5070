@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, device/realme/$(PRODUCT_RELEASE_NAME)/device.mk)
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := $(PRODUCT_RELEASE_NAME)
+# TARGET_OTA_ASSERT_DEVICE := $(PRODUCT_RELEASE_NAME)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/realme/$(PRODUCT_RELEASE_NAME)/recovery/root,recovery/root)
 
