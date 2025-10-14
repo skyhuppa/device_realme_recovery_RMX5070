@@ -1,6 +1,6 @@
 # API Level
-# PRODUCT_SHIPPING_API_LEVEL := 34
- PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_SHIPPING_API_LEVEL := 34
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
