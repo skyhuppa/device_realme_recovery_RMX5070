@@ -10,4 +10,4 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
   twrp_RMX5070-ap3a-user \
   twrp_RMX5070-ap3a-userdebug \
-  twrp_RMX5070-eng
+  twrp_RMX5070-ap3a-eng
