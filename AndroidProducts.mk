@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_RMX5070.mk
+    $(LOCAL_DIR)/omni_RMX5070.mk
 
 COMMON_LUNCH_CHOICES := \
   twrp_RMX5070-ap1a-user \
