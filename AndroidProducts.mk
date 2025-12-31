@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_RMX5070.mk
 
 COMMON_LUNCH_CHOICES := \
-  twrp_RMX5070-bp1a-user \
-  twrp_RMX5070-bp1a-user-userdebug \
-  twrp_RMX5070-bp1a-eng
+  twrp_RMX5070-ap1a-user \
+  twrp_RMX5070-ap1a-userdebug \
+  twrp_RMX5070-ap1a-eng
