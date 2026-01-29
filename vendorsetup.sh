@@ -1,1 +1,3 @@
-export ALLOW_MISSING_DEPENDENCIES=true
+add_lunch_combo omni_RMX5070-user
+add_lunch_combo omni_RMX5070-userdebug
+add_lunch_combo omni_RMX5070-eng
