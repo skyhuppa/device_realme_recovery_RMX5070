@@ -1,3 +1,3 @@
-add_lunch_combo omni_RMX5070-user
-add_lunch_combo omni_RMX5070-userdebug
-add_lunch_combo omni_RMX5070-eng
+add_lunch_combo omni_RMX5070-ap1a-user
+add_lunch_combo omni_RMX5070-ap1a-userdebug
+add_lunch_combo omni_RMX5070-ap1a-eng
