@@ -9,5 +9,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
   twrp_RMX5070-bp1a-user \
-  twrp_RMX5070-bp1a-user-userdebug \
+  twrp_RMX5070-bp1a-userdebug \
   twrp_RMX5070-bp1a-eng
