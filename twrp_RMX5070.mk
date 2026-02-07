@@ -29,4 +29,4 @@ PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme P3
 PRODUCT_MANUFACTURER := realme
 
-BUILD_FINGERPRINT := oplus/ossi/ossi:15/AP3A.240617.008/1742485963264:user/release-keys
+# BUILD_FINGERPRINT := oplus/ossi/ossi:15/AP3A.240617.008/1742485963264:user/release-keys
