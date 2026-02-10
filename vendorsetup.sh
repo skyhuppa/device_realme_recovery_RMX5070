@@ -35,11 +35,11 @@ if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
 fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
-  export TW_DEFAULT_LANGUAGE="en"
-	export LC_ALL="C"
- 	export ALLOW_MISSING_DEPENDENCIES=true
-  export TARGET_DEVICE_ALT="RMX5070"
-#	export FOX_TARGET_DEVICES="RMX5070"
+export TW_DEFAULT_LANGUAGE="en"
+export LC_ALL="C"
+export ALLOW_MISSING_DEPENDENCIES=true
+export TARGET_DEVICE_ALT="RMX5070"
+# export FOX_TARGET_DEVICES="RMX5070"
 export OF_DEFAULT_KEYMASTER_VERSION="4"
 
 # Version & Variant
