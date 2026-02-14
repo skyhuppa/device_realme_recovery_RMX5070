@@ -58,5 +58,5 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # PRODUCT_COPY_FILES += \
-#    $(OUT_DIR)/target/product/RMX5070/prebuilt/modules:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules \
-#    $(OUT_DIR)/target/product/RMX5070/prebuilt/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+    $(OUT_DIR)/target/product/RMX5070/prebuilt/modules:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules \
+    $(OUT_DIR)/target/product/RMX5070/prebuilt/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
