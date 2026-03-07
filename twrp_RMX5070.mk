@@ -18,7 +18,7 @@ $(call inherit-product, device/realme/RMX5070/device.mk)
 # Assert
 # TARGET_OTA_ASSERT_DEVICE := $(PRODUCT_RELEASE_NAME)
 
- PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/realme/RMX5070/recovery/root,recovery/root)
+# PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/realme/RMX5070/recovery/root,recovery/root)
 
  PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
  	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
