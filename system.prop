@@ -1,12 +1,12 @@
-ro.display.series=Realme P3 5G
-ro.product.board=volcano
-ro.board.platform=volcano
-ro.boot.dynamic_partitions=true
-sys.usb.controller=a600000.dwc3
-ro.boot.bootdevice=1d84000.ufshc
-
-# Battery Property
-ro.charger.enable_suspend=1
-
-# ADB
 ro.adb.secure=0
+ro.boot.dynamic_partitions=true
+vendor.gatekeeper.disable_spu=true
+ro.charger.enable_suspend=1
+ro.crypto.allow_encrypt_override=true
+vendor.gatekeeper.disable_spu=true
+
+ro.display.series=Realme P3 5G
+ro.board.platform=volcano
+ro.adb.secure=0
+ro.crypto.volume.options=
+persist.sys.isUsbOtgEnabled=true
