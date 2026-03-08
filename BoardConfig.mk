@@ -119,7 +119,7 @@ BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
 # Crypto support
 # TW_INCLUDE_CRYPTO := true
 # BOARD_USES_QCOM_FBE_DECRYPTION := true
-TW_USE_FSCRYPT_POLICY := 1
+# TW_USE_FSCRYPT_POLICY := 1
 
 # Recovery
 # TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
