@@ -144,13 +144,6 @@ BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 
-VENDOR_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 \
-                  log_buf_len=2M \
-                  nosoftlockup 
-BOARD_BOOTCONFIG += androidboot.usbcontroller=11210000.dwc3
-BOARD_BOOTCONFIG += androidboot.boot_devices=13200000.ufs
-BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
-
 # Hack: prevent anti rollback
 # PLATFORM_SECURITY_PATCH := 2099-12-31
 # VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
