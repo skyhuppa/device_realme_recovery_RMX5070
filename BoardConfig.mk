@@ -43,8 +43,8 @@ TARGET_ARCH_VARIANT := armv8-2a
 
 # specify a specific CPU model for kernel and runtime compilation.
 # Used for optimizations, such as kryo300 when compiling
-TARGET_CPU_VARIANT := kryo300
-TARGET_CPU_VARIANT_RUNTIME := kryo300
+TARGET_CPU_VARIANT := cortex-a75
+TARGET_CPU_VARIANT_RUNTIME := cortex-a75
 
 # The main ABI (application binary interface) is 64-bit ARMv8 (arm64-v8a).
 # TARGET_CPU_ABI2 := (empty) – second ABI, if needed (on 32-bit devices).
