@@ -20,8 +20,8 @@ $(call inherit-product, device/realme/RMX5070/device.mk)
 
 # PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/realme/RMX5070/recovery/root,recovery/root)
 
- PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
- 	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
+# PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
+# 	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
 
 PRODUCT_DEVICE := RMX5070
 PRODUCT_NAME := twrp_RMX5070
