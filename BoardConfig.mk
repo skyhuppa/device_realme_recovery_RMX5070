@@ -293,17 +293,11 @@ TW_FRAMERATE := 120
 
 # Other parameters
   # Set additional kernel command-line parameters (bootconfig).
-  # Various debugging and hardware parameters (e.g., androidboot.boot_devices=13200000.ufs, swiotlb, etc.) are specified here.
-  # These are specific to the Exynos platform but added to OrangeFox.
 
-VENDOR_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 \
+VENDOR_CMDLINE := "video=vfb:640x400,bpp=32,memsize=3072000 \
                   log_buf_len=2M \
                   nosoftlockup \
                   bootconfig"
-
-BOARD_BOOTCONFIG += androidboot.usbcontroller=11210000.dwc3
-BOARD_BOOTCONFIG += androidboot.boot_devices=13200000.ufs
-BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
 
 # tells the kernel not to be included in the recovery.img image (only in the boot.img).
 # A/B devices typically don't have a separate recovery.img, so the kernel doesn't need to be copied to the recovery.
