@@ -184,7 +184,6 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 
 # File systems and images
  # forces the build to generate partition image(s) (system.img, vendor.img, etc.) in ext4 format, rather than the legacy YAFFS2/F2FS format by default.
@@ -369,6 +368,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # This is especially important for devices with a boot/vendor_boot partition, starting with Android 10+.
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/custom_bootimg.mk
 
 # Specifies that the generic kernel (GKI) is used, not a custom one.
 # The builder will not look for Image.gz-dtb, but will use the GKI approach with a separate DTBO/Vendor_boot.
