@@ -182,6 +182,10 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtbs
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 # BOARD_DTB_OFFSET         := 0x01f00000
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+
 # File systems and images
  # forces the build to generate partition image(s) (system.img, vendor.img, etc.) in ext4 format, rather than the legacy YAFFS2/F2FS format by default.
  # As noted by the AOSP developers, the choice of file system for images is determined by these flags (EXT2/3/4)
