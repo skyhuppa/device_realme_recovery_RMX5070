@@ -63,7 +63,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 # Tell the system that the device is 64-bit and supports 64-bit applications.
 TARGET_SUPPORTS_64_BIT_APPS := true
-TARGET_SUPPORTS_32_BIT_APPS := true
+# TARGET_SUPPORTS_32_BIT_APPS := true
 TARGET_IS_64_BIT := true
 
 # Enables the use of the logd daemon (replacing the logcat utility). This is standard for modern builds.
@@ -91,7 +91,7 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # indicates that the device boots using UEFI (there is no traditional ARM boot.img).
 # Some devices does use UEFI boot, so this flag is set in the config.
-TARGET_USES_UEFI := true
+# TARGET_USES_UEFI := true
 
 # Update flags (A/B OTA)
   # Enables support for A/B (seamless) updates in the rescript.
