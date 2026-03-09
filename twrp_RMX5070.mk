@@ -46,7 +46,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 # 	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
 
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
-PRODUCT_NAME := omni_$(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme P3
 PRODUCT_MANUFACTURER := realme
