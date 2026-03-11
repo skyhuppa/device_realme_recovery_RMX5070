@@ -39,7 +39,7 @@ BUILD_BROKEN_USES_NETWORK := true
 
 # Specify the primary target architecture and its subvariant. Here, it's ARM64 (AArch64) with additional support for v8.2-A.
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a
+TARGET_ARCH_VARIANT := armv8-a
 
 # specify a specific CPU model for kernel and runtime compilation.
 # Used for optimizations, such as kryo300 when compiling
