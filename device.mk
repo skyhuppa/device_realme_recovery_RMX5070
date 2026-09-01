@@ -47,5 +47,5 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/realme/RMX5070/prebuilt/lib/modules,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
-    $(LOCAL_PATH)/prebuilt/first_stage_ramdisk/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+    $(call find-copy-subdir-files,*,device/realme/RMX5070/prebuilt/modules,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
+    $(LOCAL_PATH)/prebuilt/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
