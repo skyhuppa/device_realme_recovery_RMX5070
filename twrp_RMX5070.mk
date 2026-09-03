@@ -20,6 +20,9 @@ TARGET_OTA_ASSERT_DEVICE := $(PRODUCT_RELEASE_NAME)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/realme/$(PRODUCT_RELEASE_NAME)/recovery/root,recovery/root)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(DEVICE_PATH)/recovery/root,recovery/root) \
+ $(LOCAL_PATH)/prebuilt/dtb:dtb.img 
+
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := realme
