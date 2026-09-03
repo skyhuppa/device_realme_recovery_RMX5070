@@ -36,9 +36,9 @@ TARGET_SCREEN_DENSITY := 480
 TARGET_USES_VULKAN := true
 
 # Kernel
-# TARGET_NO_KERNEL := true
+TARGET_NO_KERNEL := true
 BOARD_RAMDISK_USE_LZ4 := true
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+# TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
 # Kernel
