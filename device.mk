@@ -46,6 +46,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="qssi_64-user 15 AP3A.240617.008 1742485963264 release-keys" \
+    BuildFingerprint=realme/RMX5070IN/RE608EL1:15/UKQ1.231108.001/V.R4T2.1d151b6-1-755d:user/release-keys
+    DeviceProduct=volcano
+
 # PRODUCT_COPY_FILES += \
 #    $(call find-copy-subdir-files,*,device/realme/RMX5070/prebuilt/modules,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
 #    $(LOCAL_PATH)/prebuilt/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
