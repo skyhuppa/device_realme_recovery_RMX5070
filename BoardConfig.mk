@@ -54,14 +54,14 @@ BOARD_TAGS_OFFSET := 0x01e00000
 BOARD_RAMDISK_OFFSET := 0x02000000
 BOARD_DTB_SIZE := 4488060
 BOARD_DTB_OFFSET := 0x01f00000
-BOARD_VENDOR_BASE := 0x00000000
+BOARD_KERNEL_BASE := 0x00000000
 # BOARD_VENDOR_CMDLINE = video=vfb:640x400,bpp=32,memsize=3072000 log_buf_len=2M nosoftlockup bootconfig
 # BOARD_BOOTCONFIG += androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 
 # androidboot.load_modules_parallel=false androidboot.hypervisor.protected_vm.supported=true 
 # androidboot.vendor.qspa=true androidboot.serialconsole=0 androidboot.selinux=permissive
 
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_MKBOOTIMG_ARGS += --vendor_cmdline $(BOARD_VENDOR_CMDLINE)
+BOARD_MKBOOTIMG_ARGS += --kernel_cmdline $(BOARD_VENDOR_CMDLINE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_PAGE_SIZE) 
 BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
@@ -121,7 +121,7 @@ BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 1
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
-PLATFORM_VERSION := 16.1.0
+PLATFORM_VERSION := 12
 TW_INCLUDE_CRYPTO := false
 TW_INCLUDE_CRYPTO_FBE := false
 BOARD_USES_QCOM_FBE_DECRYPTION := true
