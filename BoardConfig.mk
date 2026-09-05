@@ -41,7 +41,7 @@ TARGET_USES_VULKAN := true
 # TARGET_NO_KERNEL := true
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_KERNEL_IMAGE_NAME := kernel
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
 # Kernel
