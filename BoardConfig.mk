@@ -61,7 +61,7 @@ BOARD_KERNEL_BASE := 0x00000000
 # androidboot.vendor.qspa=true androidboot.serialconsole=0 androidboot.selinux=permissive
 
 # BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_MKBOOTIMG_ARGS += --kernel_cmdline $(BOARD_KERNEL_CMDLINE)
+# BOARD_MKBOOTIMG_ARGS += --kernel_cmdline $(BOARD_KERNEL_CMDLINE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_PAGE_SIZE) 
 BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
