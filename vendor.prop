@@ -1,6 +1,7 @@
 #ro.recovery.usb.vid=18D1
 #ro.recovery.usb.adb.pid=D001
 #ro.recovery.usb.fastboot.pid=4EE0
+ro.vendor.build.fingerprint=oplus/ossi/ossi:14/UKQ1.231108.001/1742486247856:user/release-keys
 
 # USB
 vendor.usb.use_ffs_mtp=1
