@@ -4,6 +4,7 @@ ro.board.platform=volcano
 ro.boot.dynamic_partitions=true
 sys.usb.controller=a600000.dwc3
 ro.boot.bootdevice=1d84000.ufshc
+ro.system.build.fingerprint=oplus/ossi/ossi:15/AP3A.240617.008/1742485963264:user/release-keys
 
 # Battery Property
 ro.charger.enable_suspend=1
