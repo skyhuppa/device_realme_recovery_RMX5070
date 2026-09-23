@@ -83,6 +83,7 @@ BOARD_REALME_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     product \
     system_ext \
+    system_root \
     vendor \
     odm
 BOARD_REALME_DYNAMIC_PARTITIONS_SIZE := 13321109504
