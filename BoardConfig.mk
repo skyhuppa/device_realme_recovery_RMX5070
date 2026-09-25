@@ -58,6 +58,10 @@ BOARD_VENDOR_CMDLINE += "video=vfb:640x400,bpp=32,memsize=3072000 printk.devkmsg
 BOARD_BOOTCONFIG += androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 androidboot.load_modules_parallel=false androidboot.hypervisor.protected_vm.supported=true androidboot.vendor.qspa=true androidboot.serialconsole=0 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += bootconfig
 
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+SELINUX_IGNORE_NEVERALLOWS := true
+
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --vendor_cmdline $(BOARD_VENDOR_CMDLINE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_PAGE_SIZE) 
@@ -119,8 +123,8 @@ BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 1
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
-TW_INCLUDE_CRYPTO := false
-TW_INCLUDE_CRYPTO_FBE := false
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 BOARD_USES_METADATA_PARTITION := true
