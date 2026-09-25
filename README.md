@@ -1,4 +1,6 @@
-# device_realme_recovery_RMX5070
+# TWRP DEVICE TREE FOR REALME P3 5G 
+  Product Board = volcano
+  Product release name = RMX5070
 
 
 
