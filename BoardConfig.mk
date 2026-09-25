@@ -58,7 +58,7 @@ BOARD_VENDOR_CMDLINE += "video=vfb:640x400,bpp=32,memsize=3072000 printk.devkmsg
 BOARD_BOOTCONFIG += androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 androidboot.load_modules_parallel=false androidboot.hypervisor.protected_vm.supported=true androidboot.vendor.qspa=true androidboot.serialconsole=0 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += bootconfig
 
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+# BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
