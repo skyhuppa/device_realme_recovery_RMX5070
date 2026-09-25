@@ -34,4 +34,9 @@ The build target is dependent on the device, and should reflect the location of 
 - recoveryimage/vendorbootimage not tested on RMX5070 devices because I don't have access to this device.
 - Whenever bootloader is unlocked fork this branch and update for booting.
 
+Basic   | Info
+-------:|:-------------------------
+product board | volcano
+product release name | RMX5070
+
 Credits goes to  TWRP TEAM
