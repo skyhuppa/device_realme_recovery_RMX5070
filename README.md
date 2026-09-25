@@ -1,8 +1,8 @@
 # TWRP DEVICE TREE FOR REALME P3 5G 
-  Product Board = volcano
-  Product release name = RMX5070
-
-
+| -------------------: | :------ |
+| Product Board        | volcano |
+| Product Release Name | RMX5070 |
+| Board Platform       | volcano |
 
 ## Getting Started ##
 To get started with AOSP sources to build TWRP, you'll need to get familiar
