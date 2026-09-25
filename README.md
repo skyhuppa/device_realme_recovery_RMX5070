@@ -18,7 +18,7 @@ Then to sync up:
 
     repo sync
 
-The clone device tree:
+Then clone device tree:
 
      git clone https://github.com/skyhuppa/device_realme_recovery_RMX5070 -b twrp-12.1
 
