@@ -7,4 +7,6 @@ Specific | Info
 product board | volcano
 product release name | RMX5070
 
-Credit goes to  TWRP TEAM
+## Credit  
+TWRP TEAM
+Arunpain
