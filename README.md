@@ -1,4 +1,4 @@
-## TWRP DEVICE TREE FOR REALME P3 5G (RMX5070)
+## TWRP DEVICE TREE FOR REALME P3 5G (RMX5070, RMX5070IN)
 
 #### build completed successfully 
 
