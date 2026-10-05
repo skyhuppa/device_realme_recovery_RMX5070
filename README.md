@@ -3,9 +3,9 @@
 #### build completed successfully 
 
 Specific | Info
---------:|:-------------------------
+--------:|:------------------------------
 product board | volcano
-product release name | RMX5070
+product release name | RMX5070, RMX5070IN
 
 NOTE: for this branch build for target "recoveryimage" because actual kernel image is in stock boot partition and dtb image is in vendor-boot partition. I focused on the stock recovery image which has the ramdisk files needed to boot from twrp. If anyone want to build for target vendorbootimage because cmdline is in vendor-boot then enable vendor_boot blobs in boardconfig.mk
 
