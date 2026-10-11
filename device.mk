@@ -1,6 +1,7 @@
 # API Level
-# PRODUCT_SHIPPING_API_LEVEL := 36
-PRODUCT_FULL_TREBLE_OVERRIDE := true
+BOARD_SHIPPING_API_LEVEL := 202504
+PRODUCT_SHIPPING_API_LEVEL := 36
+PRODUCT_TARGET_VNDK_VERSION := 36
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -21,29 +22,37 @@ AB_OTA_PARTITIONS += \
     odm \
     vendor_boot
 
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=erofs \
-    POSTINSTALL_OPTIONAL_system=true
-
 # Boot control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    bootctrl.volcano.recovery
+# PRODUCT_PACKAGES += \
+#    android.hardware.boot@1.2-impl-qti.recovery \
+#    bootctrl.volcano.recovery
 
 # TARGET_RECOVERY_DEVICE_MODULES += \
 #    libion \
 #    libandroidicu
 
-RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libandroidicu.so
+# RECOVERY_LIBRARY_SOURCE_FILES += \
+#    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+#    $(TARGET_OUT_SHARED_LIBRARIES)/libandroidicu.so
 
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
+
+# Build
+PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
+
+# Enable Fuse Passthrough
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.fuse.passthrough.enable=true
+
+# otacert
+PRODUCT_EXTRA_RECOVERY_KEYS += \
+    $(DEVICE_PATH)/security/releasekey
+
+# Required modules
+TWRP_REQUIRED_MODULES += \
+    prebuilt
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
