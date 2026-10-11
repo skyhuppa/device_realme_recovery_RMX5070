@@ -215,6 +215,9 @@ TW_BACKUP_EXCLUSIONS := /data/fonts
 TW_EXTRA_LANGUAGES := true
 TW_USE_TOOLBOX := true
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
+TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko rproc_qcom_common.ko q6_dlkm.ko qcom_q6v5.ko qcom_q6v5_pas.ko qcom_sysmon.ko synaptics_tcm2.ko nt38773_touch.ko nxp-nci.ko stm_st54se_gpio.ko stm_nfc_i2c.ko qcom-hv-haptics.ko cs40l26-i2c.ko"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # Brightness control
