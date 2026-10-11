@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/realme/RMX5070
+
 # for building
 ALLOW_MISSING_DEPENDENCIES := true
 BUILD_BROKEN_DUP_RULES := true
@@ -12,8 +14,6 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 # BUILD_BROKEN_USES_NETWORK := true
 # BOARD_VNDK_VERSION := current
-
-DEVICE_PATH := device/realme/RMX5070
 
 # Architecture
 TARGET_ARCH := arm64
@@ -27,7 +27,7 @@ TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
+# TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 # 64-bit support
 # TARGET_SUPPORTS_64_BIT_APPS := true
@@ -41,7 +41,7 @@ TARGET_BOOTLOADER_BOARD_NAME := $(TARGET_SOC)
 TARGET_BOARD_PLATFORM := $(TARGET_SOC)
 QCOM_BOARD_PLATFORMS := $(TARGET_SOC)
 TARGET_BOARD_PLATFORM_GPU := Adreno-810
-TARGET_OTA_ASSERT_DEVICE := RMX5070,RMX5079
+TARGET_OTA_ASSERT_DEVICE := RMX5070,RMX5070IN
 
 # Board
 BOARD_USES_QCOM_HARDWARE := true
@@ -87,29 +87,29 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 # Kernel - Board values
 BOARD_BOOT_HEADER_VERSION := 4
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_OFFSET := 0x00008000
+# BOARD_KERNEL_BASE := 0x00000000
+# BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_PAGE_SIZE := 4096
-BOARD_TAGS_OFFSET := 0x00000100
-BOARD_RAMDISK_OFFSET := 0x01000000
-BOARD_DTB_SIZE := 4016217
-BOARD_DTB_OFFSET := 0x01f00000
-BOARD_VENDOR_BASE := 0x00000000
-BOARD_VENDOR_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000 \
+# BOARD_TAGS_OFFSET := 0x00000100
+# BOARD_RAMDISK_OFFSET := 0x01000000
+# BOARD_DTB_SIZE := 4016217
+# BOARD_DTB_OFFSET := 0x01f00000
+# BOARD_VENDOR_BASE := 0x00000000
+# BOARD_VENDOR_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000 \
                         log_buf_len=2M \
-                        nosoftlockup # bootconfig  (default cmdline)
+                        nosoftlockup bootconfig # (default cmdline)
 # BOARD_VENDOR_CMDLINE += "video=vfb:640x400,bpp=32,memsize=3072000 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image bootconfig loop.max_part=7 androidboot.selinux=permissive"
 # BOARD_BOOTCONFIG += androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 androidboot.load_modules_parallel=false androidboot.hypervisor.protected_vm.supported=true androidboot.vendor.qspa=true androidboot.serialconsole=0 androidboot.selinux=permissive
-BOARD_KERNEL_CMDLINE += bootconfig
+BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 log_buf_len=2M nosoftlockup bootconfig
 
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_MKBOOTIMG_ARGS += --kernel_cmdline $(BOARD_KERNEL_CMDLINE)
-BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_PAGE_SIZE)
-BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
+# BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+# BOARD_MKBOOTIMG_ARGS += --kernel_cmdline $(BOARD_KERNEL_CMDLINE)
+# BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_PAGE_SIZE)
+# BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
+# BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
+# BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
+# BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 
 # System as root
 # BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -134,17 +134,17 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_SECURE_ERASE := true
-TARGET_NO_RECOVERY := true
+# TARGET_NO_RECOVERY := true
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # vendor_boot
-TW_LOAD_VENDOR_BOOT_MODULES := true
-BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
-BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
+# TW_LOAD_VENDOR_BOOT_MODULES := true
+# BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+# BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+# BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 
 # Hack: prevent anti rollback
 # PLATFORM_SECURITY_PATCH := 2099-12-31
@@ -180,7 +180,7 @@ TW_DEVICE_VERSION := Pain | RMX5070
 TW_BACKUP_EXCLUSIONS := /data/fonts
 TW_EXTRA_LANGUAGES := true
 TW_USE_TOOLBOX := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # Brightness control
 TW_MAX_BRIGHTNESS := 1500
