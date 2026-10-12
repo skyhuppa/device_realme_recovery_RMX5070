@@ -1,5 +1,4 @@
-# device_realme_recovery_RMX5070
-Work still in progress
+## TWRP DEVICE TREE FOR REALME P3 5G (RMX5070, RMX5070IN)
 
 ## Build from TWRP-Test Manifest
 
