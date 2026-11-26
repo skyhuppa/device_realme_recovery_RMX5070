@@ -3,7 +3,6 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit some common twrp stuff.
@@ -11,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+# Configure virtual_ab_ota compression_with_xor.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
 
 # Inherit from device
 $(call inherit-product, device/realme/RMX5070/device.mk)
@@ -22,6 +24,8 @@ $(call inherit-product, device/realme/RMX5070/device.mk)
 
 # PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
 # 	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
+
+PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
 
 PRODUCT_DEVICE := RMX5070
 PRODUCT_NAME := twrp_RMX5070
