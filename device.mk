@@ -47,12 +47,12 @@ PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.fuse.passthrough.enable=true
 
 # otacert
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(DEVICE_PATH)/security/releasekey
+# PRODUCT_EXTRA_RECOVERY_KEYS += \
+#    $(DEVICE_PATH)/security/releasekey
 
 # Required modules
-TWRP_REQUIRED_MODULES += \
-    prebuilt
+# TWRP_REQUIRED_MODULES += \
+#    prebuilts
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
