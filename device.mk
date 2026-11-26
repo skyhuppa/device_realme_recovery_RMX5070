@@ -36,9 +36,9 @@ AB_OTA_PARTITIONS += \
 #    $(TARGET_OUT_SHARED_LIBRARIES)/libandroidicu.so
 
 # fastbootd
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock \
-    fastbootd
+# PRODUCT_PACKAGES += \
+#    android.hardware.fastboot@1.1-impl-mock \
+#    fastbootd
 
 # Build
 PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
